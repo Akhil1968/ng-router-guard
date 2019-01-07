@@ -12,9 +12,8 @@ export const dashboardRoutes: Routes = [
     canActivate: [AuthGuard],
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
-      { path: 'home', component: HomeComponent},
-      {
-        path: 'admin', component: AdminComponent,
+      { path: 'home', component: HomeComponent },
+      { path: 'admin', component: AdminComponent,
         data: {role: 'Admin'},
         canActivate: [RoleGuard]
       }
