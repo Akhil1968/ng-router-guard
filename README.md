@@ -1,6 +1,5 @@
 # AuthGuard
-
-- What is a route guard?
+What is a route guard?
 You add guards to the route configuration to handle these scenarios-
 --- When  the user is not authorized to navigate to the target component.
 --- Maybe the user must login (authenticate) first.
